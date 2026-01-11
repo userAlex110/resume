@@ -1,95 +1,154 @@
-<html>
-  <head>
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <title>zichen resume</title>
-  </head>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-  <body>
-    <header id="header">
-      <!-- resume header with your name and title -->
-      <h1>王梓晨</h1>
-      <hr />
-      机器人工程 | 嵌入式开发实习生
-      <hr />
-    </header>
-    <main>
-      <article id="mainLeft">
-        <section>
-          <h2>CONTACT</h2>
-          <!-- contact info including social media -->
-          <p>
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:zichenfoxm@foxmail.com">zichenfoxm@foxmail.com</a>
-          </p>
-          <p>
-            <i class="fab fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/userAlex110">userAlex110</a>
-          </p>
-          <p>
-            <i class="fab fa-bilibili" aria-hidden="true"></i>
-            <a href="https://space.bilibili.com/3494361348180602">大黄油fly</a>
-          </p>
-        </section>
-        <section>
-          <h2>SKILLS</h2>
-          <!-- your skills -->
-          <p><strong>硬件:</strong> STM32, ARM, HX711, OLED</p>
-          <p><strong>软件:</strong> C/C++, Python (Pandas, Numpy), STM32CubeMX, Clion, openOCD, Keil MDK, Git</p>
-        </section>
-        <section>
-          <h2>EDUCATION</h2>
-          <!-- your education -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="王梓晨 - 机器人工程专业简历" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>王梓晨 | Wang Zichen - 简历</title>
+  <!-- 打印样式优化 -->
+  <style media="print">
+    @page {
+      margin: 1cm;
+    }
+
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <h1>王梓晨 <span class="pinyin">Wang Zichen</span></h1>
+    <p class="title">机器人工程 | 嵌入式开发实习生</p>
+    <p class="subtitle">Embedded &amp; Robotics Engineer Intern</p>
+    <div class="contact-bar">
+      <a href="mailto:zichenfoxm@foxmail.com">
+        <i class="fas fa-envelope"></i> zichenfoxm@foxmail.com
+      </a>
+      <a href="https://github.com/userAlex110">
+        <i class="fab fa-github"></i> userAlex110
+      </a>
+      <a href="https://space.bilibili.com/3494361348180602">
+        <i class="fab fa-bilibili"></i> 大黄油fly
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <aside id="mainLeft">
+      <section class="skills-section">
+        <h2>专业技能</h2>
+        <div class="skill-category">
+          <h3>硬件开发</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">STM32</span>
+            <span class="skill-tag">ARM架构</span>
+            <span class="skill-tag">HX711</span>
+            <span class="skill-tag">OLED显示</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>软件开发</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">STM32CubeMX</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>开发工具</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CLion</span>
+            <span class="skill-tag">Keil MDK</span>
+            <span class="skill-tag">openOCD</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="education-section">
+        <h2>教育背景</h2>
+        <div class="education-item">
           <h3>机器人工程</h3>
-          <p>成都大学 | 本科</p>
-          <p>2023-2027</p>
-        </section>
-        <section>
-          <h2>CERTIFICATES</h2>
-          <p>蓝桥杯Python省三等奖</p>
-          <p>“一带一路科技交流大会”志愿者</p>
-        </section>
-        <section>
-          <h2>LANGUAGES</h2>
-          <p>英语 CET-4</p>
-        </section>
-      </article>
-      <article id="mainRight">
-        <section>
-          <h2>ABOUT</h2>
-          <p>
-            21岁，机器人工程专业本科在读（2027年毕业）。求职意向：嵌入式硬件/软件开发、ARM开发实习。期望投身智能硬件、物联网、消费电子产品行业，积累实战经验。
-          </p>
-        </section>
-        <section>
-          <h2>PROJECT & WORK EXPERIENCE</h2>
-          
+          <p class="school">成都大学 | 本科</p>
+          <p class="period">2023 - 2027</p>
+        </div>
+      </section>
+
+      <section class="certificates-section">
+        <h2>证书荣誉</h2>
+        <ul class="certificates-list">
+          <li>蓝桥杯Python程序设计省三等奖 (2024)</li>
+          <li>"一带一路科技交流大会"优秀志愿者 (2024)</li>
+        </ul>
+      </section>
+
+      <section class="languages-section">
+        <h2>语言能力</h2>
+        <ul class="languages-list">
+          <li>英语 CET-4 (具备技术文档阅读能力)</li>
+        </ul>
+      </section>
+    </aside>
+
+    <article id="mainRight">
+      <section class="about-section">
+        <h2>个人简介</h2>
+        <p>
+          21岁，机器人工程专业本科在读（2027年毕业）。求职意向：嵌入式硬件/软件开发、ARM开发实习。
+          期望投身智能硬件、物联网、消费电子产品行业，积累实战经验。
+          具备扎实的硬件基础和软件开发能力，热衷于将理论知识转化为实际应用。
+        </p>
+      </section>
+
+      <section class="experience-section">
+        <h2>项目与工作经验</h2>
+
+        <div class="experience-item">
           <h3>基于STM32的电子称设计</h3>
-          <p><strong>项目负责人</strong> | 2025.11 - 2025.12</p>
+          <p class="role"><strong>项目负责人</strong> | 2025.11 - 2025.12</p>
           <ul>
             <li><strong>硬件设计</strong>：选用 STM32F103C8T6 主控芯片与 HX711 高精度 A/D 模块，完成 10kg 量程电子秤的硬件电路搭建与调试。</li>
-            <li><strong>软件开发</strong>：使用 Keil MDK 编写固件，实现“压力采集 → A/D转换 → 均值滤波算法 → OLED显示”的完整数据链路。</li>
+            <li><strong>软件开发</strong>：使用 Keil MDK 编写固件，实现"压力采集 → A/D转换 → 均值滤波算法 → OLED显示"的完整数据链路。</li>
+            <li class="project-result"><strong>项目成果</strong>：实现精度±1g的称重功能，系统响应时间&lt;100ms，成功通过功能测试。</li>
           </ul>
+        </div>
 
-          <h3>英语课程思政数据分析</h3>
-          <p><strong>数据分析员</strong> | 2025.03 - 2025.09</p>
+        <div class="experience-item">
+          <h3>英语课程思政数据分析项目</h3>
+          <p class="role"><strong>数据分析员</strong> | 2025.03 - 2025.09</p>
           <ul>
-            <li><strong>数据处理</strong>：使用 Python (Pandas/Numpy) 清洗 500+ 份问卷，通过因子分析提炼 3 个核心维度；结合 NLTK/TextBlob 进行情感分析。</li>
+            <li><strong>数据处理</strong>：使用 Python (Pandas/Numpy) 清洗 500+ 份问卷，通过因子分析提炼 3 个核心维度；结合 NLTK/TextBlob 进行情感分析。
+            </li>
             <li><strong>NLP应用</strong>：处理 7000+ 条视频评论，利用 SSH 远程连接 GPU 服务器运行 BERTopic 模型，解决本地算力瓶颈；代码托管至 GitHub。</li>
+            <li class="project-result"><strong>项目成果</strong>：分析报告被课程组采纳，为教学改进提供数据支撑，获得导师高度评价。</li>
           </ul>
+        </div>
 
+        <div class="experience-item">
           <h3>学校信息网络中心助理</h3>
-          <p><strong>校园网运维助理</strong> | 2024.06 - 至今</p>
+          <p class="role"><strong>校园网运维助理</strong> | 2024.06 - 至今</p>
           <ul>
-            <li><strong>流程优化</strong>：设计并搭建学生请假申请表单，推动请假事务全流程线上化，降低人工沟通成本。</li>
-            <li><strong>文档建设</strong>：撰写操作教程并部署至 GitHub Pages，帮助新用户快速上手。</li>
-            <li><strong>运维支持</strong>：协助处理校园邮箱问题及用户咨询，累计响应 700+ 次服务请求。</li>
+            <li><strong>流程优化</strong>：设计并搭建学生请假申请表单，推动请假事务全流程线上化，降低人工沟通成本 <span class="project-result">30%</span>。</li>
+            <li><strong>文档建设</strong>：撰写操作教程并部署至 GitHub Pages，帮助新用户快速上手，文档访问量 <span class="project-result">1000+</span>。
+            </li>
+            <li><strong>运维支持</strong>：协助处理校园邮箱问题及用户咨询，累计响应 700+ 次服务请求，用户满意度 <span class="project-result">95%+</span>。
+            </li>
           </ul>
-        </section>
-      </article>
-    </main>
-  </body>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
 </html>

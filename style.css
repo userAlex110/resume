@@ -1,64 +1,188 @@
+/* filepath: /home/ziche/code/personal/playground/resume/style.css */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --border-color: #e9ecef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-color);
     max-width: 960px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-h2 {
-    font-size: 1.5em;
-    padding-bottom: 1em;
-}
-
-h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
-}
-
-
-main {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 3em;
-}
-
-header {
-    text-align: center;
-    margin: auto 2em;
-}
-
-section {
-    margin: auto 1em 4em 2em;
-}
-
-i {
-    margin-right: .5em;
-}
-
-p {
-    margin: .2em auto
-}
-
-hr {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 100;
-    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
 }
 
-#mainLeft {
-    border-right: 1px solid lightgray;
+h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.3em;
+
+    .pinyin {
+        font-size: 0.45em;
+        letter-spacing: 0;
+        color: var(--accent-color);
+        margin-left: 0.5em;
+        font-weight: 500;
+    }
+}
+
+h2 {
+    font-size: 1.3em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.title {
+    font-size: 1.1em;
+    color: var(--accent-color);
+    margin: 0.5em 0;
+
+    .subtitle {
+        font-size: 1em;
+        color: var(--text-color);
+        margin: 0.1em 0 0.6em;
+    }
+}
+
+.contact-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+.contact-bar a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.contact-bar a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.skill-category {
+    margin-bottom: 1.5em;
+}
+
+.skill-category h3 {
+    font-size: 0.95em;
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.skill-tag {
+    background-color: var(--light-gray);
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    border: 1px solid var(--border-color);
+}
+
+.experience-item {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.role {
+    color: var(--accent-color);
+    margin-bottom: 0.8em;
+}
+
+.project-result {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+ul {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        padding: 1em;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .contact-bar {
+        flex-direction: column;
+        gap: 0.5em;
+    }
 }
