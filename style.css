@@ -200,31 +200,55 @@ a:hover {
     body {
         max-width: 100%;
         margin: 0;
-        padding: 0.6cm 0.8cm;
-        font-size: 12px;
+        padding: 0.5cm 0.7cm;
+        font-size: 11.5px;
     }
 
     main {
         display: grid;
         grid-template-columns: 32% 68% !important;
-        gap: 1.1em;
+        gap: 0.9em;
     }
 
     header {
-        margin-bottom: 1em;
-        padding-bottom: 0.8em;
+        margin-bottom: 0.7em;
+        padding-bottom: 0.5em;
     }
 
     h1 {
-        font-size: 2.1em;
+        font-size: 1.9em;
+        letter-spacing: 0.05em;
+    }
+
+    h2 {
+        margin-bottom: 0.7em;
+        padding-bottom: 0.35em;
+    }
+
+    h3 {
+        margin-bottom: 0.35em;
+    }
+
+    section {
+        margin-bottom: 1.2em;
+    }
+
+    ul {
+        padding-left: 1.2em;
+        margin: 0.35em 0;
+    }
+
+    li {
+        margin-bottom: 0.35em;
     }
 
     .contact-bar {
-        gap: 0.4em;
+        gap: 0.3em;
     }
 
     .contact-bar a {
         box-shadow: none;
         background-color: #f4f7fb;
+        padding: 0.3em 0.6em;
     }
 }
