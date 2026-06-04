@@ -30,8 +30,8 @@
 <body>
   <header id="header">
     <h1>王梓晨 <span class="pinyin">Wang Zichen</span></h1>
-    <p class="title">机器人工程 | 软件开发实习生</p>
-    <p class="subtitle">Software Development Intern</p>
+    <p class="title">机器人工程 | 嵌入式 / 机器人开发实习生</p>
+    <p class="subtitle">Embedded Systems &amp; Robotics Intern</p>
   </header>
 
   <main>
@@ -63,25 +63,36 @@
           </div>
         </div>
         <div class="skill-category">
-          <h3>开发环境</h3>
+          <h3>嵌入式 &amp; 硬件</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">CLion</span>
-            <span class="skill-tag">Claude Code</span>
-            <span class="skill-tag">嵌入式开发</span>
+            <span class="skill-tag">STM32MP1</span>
+            <span class="skill-tag">HAL/LL库</span>
+            <span class="skill-tag">GPIO/中断/定时器</span>
+            <span class="skill-tag">I2C/UART/PWM</span>
+            <span class="skill-tag">ST-Link调试</span>
+            <span class="skill-tag">Jetson Xavier NX</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>Web与自动化</h3>
+          <h3>机器视觉 &amp; 机器人</h3>
           <div class="skill-tags">
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">Jekyll</span>
-            <span class="skill-tag">RESTful API</span>
-            <span class="skill-tag">Python脚本</span>
-            <span class="skill-tag">Dify</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">SIFT/AKAZE/ORB</span>
             <span class="skill-tag">ROS</span>
+            <span class="skill-tag">Dobot机械臂</span>
+            <span class="skill-tag">Jupyter Lab</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>工具链</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">STM32CubeIDE</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Python脚本</span>
           </div>
         </div>
       </section>
@@ -115,68 +126,78 @@
       <section class="about-section">
         <h2>个人简介</h2>
         <p>
-          21岁，机器人工程专业本科在读（2027年毕业）。求职意向：软件开发实习生（C++/Python方向）、嵌入式开发、测试开发。
-          具备Linux系统日常使用经验、Python自动化脚本开发能力，以及前端页面开发实战经验。
-          机器人工程专业背景赋予系统性工程思维，熟悉嵌入式开发基础，正在进行ROS（机器人操作系统）学习。
-          正在系统学习C++，备战2026年蓝桥杯C/C++组比赛，持续提升自己的编程能力。
+          21岁，机器人工程专业本科在读（2027年毕业）。求职意向：嵌入式开发、机器人软件开发（C++/Python方向）。
+          机器人工程背景赋予系统性工程思维，正在系统学习 C++ 与嵌入式底层开发，备战 2026 年蓝桥杯 C/C++ 组。
+          具备 STM32 嵌入式平台实战经验（GPIO/中断/定时器/串行通信），熟悉 Linux 环境与 ROS（机器人操作系统）。
+          同时具有计算机视觉项目经验（SIFT/AKAZE/ORB 特征算法对比），使用 Jetson Xavier NX 完成过视觉+机械臂实验。
         </p>
       </section>
 
-      <section class=”experience-section”>
+      <section class="experience-section">
         <h2>项目经历</h2>
 
-        <div class=”experience-item highlight”>
-          <h3>学校信息网络中心 - 网办流程优化与文档建设</h3>
-          <p class=”role”><strong>网办流程设计师 &amp; 文档维护员</strong> | 2024.06 - 至今</p>
+        <!-- 嵌入式核心项目 -->
+        <div class="experience-item highlight">
+          <h3>嵌入式系统应用及实践 — STM32MP1 平台开发</h3>
+          <p class="role"><strong>课程实验（独立完成）</strong> | 2026.03 - 2026.06</p>
           <ul>
-            <li><strong>独立设计网办流程</strong>：从零学习网办系统设计，基于学生请假需求独立完成表单设计与开发，推动该流程上线学校官方平台，实现全流程线上化。</li>
-            <li><strong>搭建技术文档体系</strong>：发现网办流程缺乏文档，主动学习 Jekyll 搭建静态文档网站，部署至 GitHub Pages（<a href=”https://useralex110.github.io/docs-tutorial/” target=”_blank” rel=”noreferrer”>文档站点</a>），帮助新用户快速上手。</li>
-            <li><strong>开发效率工具</strong>：
-              <ul>
-                <li>使用 Dify 搭建智能体，辅助表单设计与 PDF 打印模板生成。</li>
-                <li>编写 Python 脚本调用 Qwen-VL API，实现上传表单图片自动转换为 HTML 代码，减少重复编码工作。</li>
-                <li>开发 Claude Code Skill，将教程文档结构化提炼，提升团队协作效率。</li>
-              </ul>
-            </li>
-            <li><strong>运维支持</strong>：累计响应 700+ 次校园邮箱及网办使用咨询，具备与用户沟通需求的能力。</li>
+            <li><strong>GPIO 外设控制</strong>：基于 FS-MP1C 异构平台（Cortex-A7 + Cortex-M4），使用 STM32CubeIDE 完成 GPIO Output 配置与 HAL 库编程，实现 4 路 LED 流水灯控制逻辑。</li>
+            <li><strong>外部中断与按键输入</strong>：配置 EXTI2（外部中断2）+ NVIC 优先级管理（抢占优先级 4bit），实现 GPIO 轮询 + 中断双模式按键检测，完成 LED 状态切换（HAL_GPIO_TogglePin）。</li>
+            <li><strong>定时器应用（TIM6 + TIM4 PWM）</strong>：配置基本定时器 TIM6 周期中断（HAL_TIM_PeriodElapsedCallback），控制 LED 以精确 5Hz 闪烁；配置通用定时器 TIM4 Channel1 输出 PWM 波（prescaler=640, ARR=1000, freq=100Hz），通过按键动态调整 CCR 占空比控制蜂鸣器音量。</li>
+            <li><strong>串行通信与传感器采集</strong>：配置 UART4 异步串口（115200bps/8N1）连接上位机 printf 输出；I2C1 接口驱动 SI7006 温湿度传感器，编写 I2C 读写驱动（HAL_I2C_Master_Transmit/Receive），每秒采集温湿度并通过串口上报。</li>
+            <li><strong>系统调试能力</strong>：掌握 ST-Link 在线调试、寄存器验证、中断优先级调优、HAL 库与 LL 库对比分析。</li>
           </ul>
-          <p class=”skills-used”><strong>技术栈</strong>：HTML / CSS / Python / Jekyll / GitHub Pages / Dify / Qwen-VL API / Git</p>
+          <p class="skills-used"><strong>技术栈</strong>：STM32MP1 / FS-MP1C / STM32CubeIDE / Cortex-M4 / HAL库 / GPIO / EXTI / TIM / I2C / UART / PWM / ST-Link</p>
         </div>
 
-        <div class=”experience-item”>
-          <h3>全自动内镜清洗机控制系统</h3>
-          <p class=”role”><strong>嵌入式开发学习项目</strong> | 2026.03 - 至今</p>
+        <!-- 视觉项目 -->
+        <div class="experience-item">
+          <h3>单目视觉里程计 — 特征算法对比实验</h3>
+          <p class="role"><strong>课题实验（独立研究）</strong> | 2026.04 - 至今</p>
           <ul>
-            <li><strong>硬件控制开发</strong>：设计内镜清洗机/储镜柜控制系统，实现照明、风机、紫外线消毒的自动开关控制逻辑。</li>
-            <li><strong>环境监测功能</strong>：开发温湿度数据采集模块，实现环境参数实时监测与阈值报警。</li>
-            <li><strong>嵌入式编程实践</strong>：基于 STM32 主控编写嵌入式 C 代码，学习 GPIO 控制、定时器中断、ADC 采集等基础技术。</li>
-            <li><strong>系统集成调试</strong>：完成传感器硬件接线与软件联调，积累嵌入式系统调试经验。</li>
+            <li><strong>算法复现与对比</strong>：在 Jupyter Lab 中分别实现 SIFT、AKAZE、ORB 三种经典视觉特征提取算法，使用 OpenCV 库完成特征点检测、描述子匹配与运动估计。</li>
+            <li><strong>数据集验证</strong>：使用德国 KITTI 公开数据集（真实驾驶场景）作为 ground truth，对比三种算法在轨迹精度、实时性、鲁棒性三个维度的表现差异。</li>
+            <li><strong>量化分析</strong>：绘制 ATE / RPE 误差曲线，分析各算法在旋转/平移/尺度变化场景下的退化原因，撰写对比实验报告。</li>
+            <li><strong>工程实践</strong>：使用 Matplotlib 可视化轨迹与误差分布，NumPy 处理位姿矩阵运算，掌握视觉SLAM前端核心流程。</li>
           </ul>
-          <p class=”skills-used”><strong>技术栈</strong>：嵌入式C / STM32 / 传感器数据采集 / 硬件控制</p>
+          <p class="skills-used"><strong>技术栈</strong>：Python / OpenCV / SIFT / AKAZE / ORB / KITTI Dataset / Jupyter Lab / Matplotlib / NumPy</p>
         </div>
 
-        <div class=”experience-item”>
+        <div class="experience-item">
+          <h3>医学视觉+机械臂实验 — Jetson Xavier NX × Dobot</h3>
+          <p class="role"><strong>课程实验</strong> | 2026.05 - 2026.06</p>
+          <ul>
+            <li><strong>边缘计算平台</strong>：基于 NVIDIA Jetson Xavier NX 部署视觉处理流水线，实现实时医学图像采集与预处理。</li>
+            <li><strong>视觉-机械臂联动</strong>：使用 Dobot 桌面机械臂配合视觉识别结果完成抓取/放置动作，初步探索视觉伺服在医疗场景中的应用。</li>
+            <li><strong>嵌入式+AI 交叉</strong>：在边缘设备上运行图像处理算法，理解算力受限场景下的算法选型与部署优化。</li>
+          </ul>
+          <p class="skills-used"><strong>技术栈</strong>：Jetson Xavier NX / Dobot机械臂 / OpenCV / Linux / Python / 视觉伺服</p>
+        </div>
+
+        <!-- 工具项目 -->
+        <div class="experience-item">
           <h3>Linux 文件整理工具</h3>
-          <p class=”role”><strong>个人练手项目</strong> | 2026.03</p>
+          <p class="role"><strong>个人练手项目</strong> | 2026.03</p>
           <ul>
-            <li>使用 C++ 开发命令行工具，实现文件按扩展名自动分类、批量重命名、清理空文件功能</li>
-            <li>学习 Linux 系统调用：opendir/readdir/stat/rename 等文件操作 API</li>
-            <li>实现命令行参数解析，支持 --organize/--rename/--clean 等多种操作模式</li>
-            <li>编写 Makefile 管理编译流程，代码托管至 GitHub 并撰写使用文档</li>
+            <li>使用 C++ 开发命令行工具，实现文件按扩展名自动分类、批量重命名、清理空文件功能。</li>
+            <li>学习 Linux 系统调用：opendir / readdir / stat / rename 等文件操作 API。</li>
+            <li>实现命令行参数解析，支持 --organize / --rename / --clean 等多种操作模式。</li>
+            <li>编写 Makefile 管理编译流程，代码托管至 GitHub 并撰写使用文档。</li>
           </ul>
-          <p class=”skills-used”><strong>技术栈</strong>：C++ / Linux系统编程 / Makefile / Git</p>
+          <p class="skills-used"><strong>技术栈</strong>：C++ / Linux 系统编程 / Makefile / Git</p>
         </div>
 
-        <div class=”experience-item”>
-          <h3>英语课程思政数据分析</h3>
-          <p class=”role”><strong>数据分析员</strong> | 2025.03 - 2025.09</p>
+        <!-- 学校工作 -->
+        <div class="experience-item">
+          <h3>学校信息网络中心 — 网办流程设计与文档建设</h3>
+          <p class="role"><strong>网办流程设计师 &amp; 文档维护员</strong> | 2024.06 - 至今</p>
           <ul>
-            <li><strong>数据处理</strong>：使用 Python (Pandas/NumPy) 清洗 500+ 份问卷数据，通过因子分析提炼 3 个核心维度。</li>
-            <li><strong>NLP 应用</strong>：处理 7000+ 条视频评论，使用 NLTK/TextBlob 进行情感分析。</li>
-            <li><strong>远程训练</strong>：通过 SSH 连接 GPU 服务器运行 BERTopic 模型进行主题建模，解决本地算力瓶颈。</li>
-            <li><strong>协作开发</strong>：代码托管至 GitHub，与团队成员协作完成分析任务。</li>
+            <li><strong>独立设计网办流程</strong>：基于学生请假需求独立完成表单设计与开发，推动上线学校官方平台，实现全流程线上化。</li>
+            <li><strong>搭建技术文档体系</strong>：使用 Jekyll 搭建静态文档网站，部署至 GitHub Pages（<a href="https://useralex110.github.io/docs-tutorial/" target="_blank" rel="noreferrer">文档站点</a>），帮助新用户快速上手。</li>
+            <li><strong>开发效率工具</strong>：使用 Dify 搭建智能体辅助表单设计；编写 Python 脚本调用 Qwen-VL API 实现表单图片自动转 HTML 代码。</li>
+            <li><strong>运维支持</strong>：累计响应 700+ 次校园邮箱及网办使用咨询。</li>
           </ul>
-          <p class=”skills-used”><strong>技术栈</strong>：Python / Pandas / NumPy / NLTK / TextBlob / BERTopic / SSH / GitHub</p>
+          <p class="skills-used"><strong>技术栈</strong>：HTML/CSS / Python / Jekyll / GitHub Pages / Dify / Qwen-VL API / Git</p>
         </div>
       </section>
     </article>

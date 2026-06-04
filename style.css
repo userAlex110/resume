@@ -143,6 +143,17 @@ section {
     border-bottom: 1px dashed var(--border-color);
 }
 
+.experience-item.highlight {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1em;
+    border-radius: 0 6px 6px 0;
+}
+
+.experience-item.highlight h3 {
+    color: var(--accent-color);
+}
+
 .experience-item:last-child {
     border-bottom: none;
 }
