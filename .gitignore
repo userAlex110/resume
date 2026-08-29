@@ -13,3 +13,9 @@ Desktop.ini
 
 # VS Code
 .vscode/
+
+# 工具生成缓存
+.v2c/
+
+# 跨项目复用的 agent 指令文件
+AGENTS.md
