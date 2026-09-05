@@ -87,6 +87,10 @@ python -m http.server 8080
 - [ ] 翻实验报告 / Jupyter 输出，把 ② 的 ATE/RPE 数值、帧率找出来。
 - [ ] 跑一遍 ① 和 ④，补测耗时/成功率（真实数字，五分钟可得）。
 
+## 多版本简历
+
+针对特定公司的定制版简历放在同名顶层子文件夹（如 `byd/`），访问路径为 `/resume/<公司名>/`；页面 `<head>` 带 `<meta name="robots" content="noindex">` 不被搜索引擎收录，版本之间互不链接。根目录 `index.html` 始终是通用版。新建/修改规范见 `CLAUDE.md` 的 Multi-version Resumes 一节。
+
 ## 许可证
 
 MIT

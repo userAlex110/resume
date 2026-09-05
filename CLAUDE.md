@@ -68,3 +68,22 @@ When editing the resume:
 - Maintain the two-column structure for print compatibility
 - Keep experience items in reverse chronological order (newest first)
 - Use `.skill-tag` spans for skills, `.experience-item` divs for work/projects
+
+## Multi-version Resumes
+
+The repository also hosts company-specific tailored versions alongside the canonical generic resume.
+
+- Root `index.html` is the **canonical generic resume** — never replace or overwrite it with a company-specific version.
+- Company-specific versions live in top-level folders named after the company (e.g. `byd/index.html`), served at `https://useralex110.github.io/resume/<company>/`.
+- Each version folder is **self-contained**: copy `index.html`, `style.css`, and `favicon.png` from root into the folder, then edit the copy. Do not reference root assets via `../` relative paths.
+- Every version page MUST include `<meta name="robots" content="noindex">` in `<head>` so search engines do not index tailored versions. The root generic version does NOT get this tag.
+- Never cross-link between version pages, and never link from the root page to any version folder — each version is shared only with its target company.
+- Keep all facts and metrics identical across versions — tailor emphasis, ordering, and wording only. Never invent numbers.
+- When `style.css` changes globally, manually sync the updated copy into every version folder.
+
+### Creating a new version
+
+1. Create a top-level folder named after the company (lowercase, no spaces).
+2. Copy `index.html`, `style.css`, `favicon.png` from root into it.
+3. Edit the copy for the target JD (summary, skill order, project bullet emphasis) and add the `noindex` meta tag.
+4. Commit and push to `main` — GitHub Pages publishes the new path automatically within about a minute.
