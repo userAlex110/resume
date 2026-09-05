@@ -1,6 +1,11 @@
 # 所有文本文件入库统一为 LF：仓库内永远 LF，三平台（macOS/Windows/Linux）一致
 * text=auto
 
+# 仓库元文件：检出同样保持 LF，保证三平台工作树完全一致
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+.nojekyll      text eol=lf
+
 # Web/文本文件：任何系统检出都保持 LF（现代编辑器均兼容 LF，避免混合行尾）
 *.html text eol=lf
 *.htm  text eol=lf
