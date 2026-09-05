@@ -66,7 +66,7 @@ Defined in `:root` at `style.css:1-7`:
 When editing the resume:
 - Use semantic HTML elements (`<section>`, `<article>`, `<aside>`)
 - Maintain the two-column structure for print compatibility
-- Keep experience items in reverse chronological order (newest first)
+- Order projects by relevance to the target direction first (strongest/most relevant project at top); dates shown must remain truthful. Sidebars (certificates, education) keep natural order.
 - Use `.skill-tag` spans for skills, `.experience-item` divs for work/projects
 
 ## Multi-version Resumes
